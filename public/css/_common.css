@@ -1,0 +1,111 @@
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+
+body {
+    font-size: 13px;
+}
+
+a,
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+/**********************************************************************************************************************/
+/**
+* NAVBAR
+*/
+nav.navbar {
+    background-color: #a2c4c9;
+    line-height: 40px;
+}
+
+.navbar-nav > li > a {
+    line-height: 30px;
+}
+
+nav.navbar a.navbar-brand {
+    height: auto;
+}
+
+.navbar-form > .input-group > .form-control {
+    width: 350px;
+}
+
+.input-group > span {
+    cursor: pointer;
+}
+
+nav.navbar input,
+nav.navbar .input-group-addon {
+    border: none;
+}
+
+.nav a {
+    color: #134f5c;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: transparent;
+}
+
+.dropdown-menu > li > a {
+    font-size: .9em;
+}
+
+.navbar-right > a {
+    display: block;
+    height: 48px;
+    width: 48px;
+    margin-top: 5px;
+}
+
+/**********************************************************************************************************************/
+aside h5.page-header {
+    color: #ddd;
+    margin-top: 0;
+}
+
+/**********************************************************************************************************************/
+#quick-add ul {
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    list-style-type: none;
+    border-bottom: 1px solid #eee;
+}
+
+#quick-add ul li {
+    display: inline-block;
+}
+
+#quick-add ul li:after {
+    content: " | ";
+    color: #eee;
+}
+
+#quick-add ul li:last-child:after {
+    content: "";
+}
+
+#quick-add ul li a:hover {
+    color: #bbb;
+}
+
+#quick-add ul li a {
+    color: #ddd;
+    display: inline-block;
+    font-size: 1.1em;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+#quick-add ul li.current a {
+    color: #555;
+}
+
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/

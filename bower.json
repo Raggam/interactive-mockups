@@ -1,0 +1,27 @@
+{
+    "name": "interactive-mockups",
+    "version": "0.0.1-alpha",
+    "description": "Raggam",
+    "homepage": "https://github.com/Raggam/interactive-mockups",
+    "contributors": [
+        {
+            "name": "Alec ROY",
+            "web": "https://github.com/aroybase"
+        },
+        {
+            "name": "Gabriel MALET",
+            "web": "https://github.com/UbikZ"
+        },
+        {
+            "name": "Alexandre GAUDICHON"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Raggam/interactive-mockups.git"
+    },
+    "dependencies": {
+        "bootstrap": "#3.2",
+        "components-font-awesome": "#4"
+    }
+}
