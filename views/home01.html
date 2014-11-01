@@ -19,99 +19,329 @@
 </head>
 <body>
 <div id="wrapper">
-    <nav class="navbar navbar-defaultnavbar-fixed-top" role="navigation">
-        <div class="container-fluid col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img alt="Raggam" src="../public/img/logo-web.png">
+<nav class="navbar" role="navigation">
+    <div class="container-fluid col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img alt="Raggam" src="../public/img/logo-web.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="input-group">
+                    <input type="search" class="form-control input-sm"
+                           placeholder="Rechecher un utilisateur, un projet, une tâche…">
+                    <span class="input-group-addon"><i class="fa fa-fw fa-search"></i></span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Projets</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Membres
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Utilisateurs</a></li>
+                        <li><a href="#">Groupes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paramètres <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-fw fa-building-o"></i>
+                                Compte de `Raggam`
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-fw fa-cubes"></i>
+                                Acheter des k'ubz
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav navbar-nav navbar-right">
+                <a class="" href="#">
+                    <img src="../public/assets/me.jpeg"
+                         class="img-rounded"
+                         width="48px"
+                         alt="Alicia Penn (Vous)">
                 </a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="input-group">
-                        <input type="search" class="form-control input-sm"
-                               placeholder="Rechecher un utilisateur, un projet, une tâche…">
-                        <span class="input-group-addon"><i class="fa fa-fw fa-search"></i></span>
-                    </div>
-                </form>
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#">Projets</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Membres
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Utilisateurs</a></li>
-                            <li><a href="#">Groupes</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paramètres <span
-                                class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-fw fa-building-o"></i>
-                                    Compte de `Raggam`
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-fw fa-cubes"></i>
-                                    Acheter des k'ubz
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="nav navbar-nav navbar-right">
-                    <a class="" href="#">
-                        <img src="../public/assets/me.jpeg"
-                             class="img-responsive img-rounded"
-                             width="48px"
-                             alt="Alicia Penn (Vous)">
-                    </a>
+        </div>
+    </div>
+</nav>
+<main>
+<div id="full-content"
+     class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+<aside class="col-lg-3 col-md-3 col-sm-3 col-xs-0">
+    <h5 class="page-header"><i class="fa fa-fw fa-star"></i> Favoris</h5>
+</aside>
+<div id="main-content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+<div id="quick-add" class="panel panel-default">
+    <div class="panel-body">
+        <ul>
+            <li class="current"><a href="#"><i class="fa fa-fw fa-clock-o"></i> Déclarer</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-edit"></i> Créer</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-comments"></i> Contacter</a></li>
+        </ul>
+        <form role="search">
+            <div class="input-group">
+                <input type="search" class="form-control input-sm"
+                       placeholder="Chercher une tâche par titre ou numéro">
+                <span class="input-group-addon"><i class="fa fa-fw fa-search"></i></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<h3 class="date">Aujourd'hui - 01 nov. 2014</h3>
+
+<div class="panel panel-default feed-entry">
+    <div class="panel-body">
+        <div class="col-lg-6 description">
+            <h4>
+                <a href="#">[#4332] - Création, mise à jour, liste et suppression des util…</a>
+            </h4>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo…
+            </p>
+        </div>
+        <div class="col-lg-2 time">
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="fa fa-fw fa-clock-o"></i>
+                </div>
+                <div class="col-lg-8">
+                    <strong class="estimate">-3hrs <span>reste 2hrs</span></strong>
                 </div>
             </div>
         </div>
-    </nav>
-    <main>
-        <div id="full-content"
-             class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
-            <aside class="col-lg-3 col-md-3 col-sm-3 col-xs-0">
-                <h5 class="page-header"><i class="fa fa-fw fa-star"></i> Favoris</h5>
-            </aside>
-            <div id="main-content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                <div id="quick-add" class="panel panel-default">
-                    <div class="panel-body">
-                        <ul>
-                            <li class="current"><a href="#"><i class="fa fa-fw fa-clock-o"></i> Déclarer</a></li>
-                            <li><a href="#"><i class="fa fa-fw fa-edit"></i> Créer</a></li>
-                            <li><a href="#"><i class="fa fa-fw fa-comments"></i> Contacter</a></li>
-                        </ul>
-                        <form role="search">
-                            <div class="input-group">
-                                <input type="search" class="form-control input-sm"
-                                       placeholder="Chercher une tâche par titre ou numéro">
-                                <span class="input-group-addon"><i class="fa fa-fw fa-search"></i></span>
-                            </div>
-                        </form>
-                    </div>
+        <div class="col-lg-4 person">
+            <img src="../public/assets/me.jpeg"
+                 class="img-rounded"
+                 width="64"
+                 alt="Alicia Penn (Vous)">
+            <ul class="informations">
+                <li><span class="label label-info">Déclaration de temps</span> <i class="fa fa-fw fa-info-circle"></i>
+                </li>
+                <li><i class="fa fa-fw fa-user"></i><strong> Alicia Penn</strong></li>
+                <li><i class="fa fa-fw fa-calendar"></i><span> 01 nov. 2014</span></li>
+                <li><i class="fa fa-fw fa-clock-o"></i><span> 16:52</span></li>
+            </ul>
+            <ul class="actions">
+                <li><a href="#"><i class="fa fa-fw fa-external-link"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-comments"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-magnet"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!---->
+<!---->
+<!---->
+<div class="panel panel-default feed-entry">
+    <div class="panel-body">
+        <div class="col-lg-6 description">
+            <h4>
+                <a href="#">[#4332] - Création, mise à jour, liste et suppression des util…</a>
+            </h4>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo…
+            </p>
+        </div>
+        <div class="col-lg-2 time">
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="fa fa-fw fa-clock-o"></i>
+                </div>
+                <div class="col-lg-8">
+                    <strong class="estimate">-3hrs <span>reste 2hrs</span></strong>
                 </div>
             </div>
         </div>
-    </main>
+        <div class="col-lg-4 person">
+            <img src="../public/assets/01.jpg"
+                 class="img-rounded"
+                 width="64"
+                 alt="Pierre Pellerin">
+            <ul class="informations">
+                <li><span class="label label-info">Affectation</span> <i class="fa fa-fw fa-info-circle"></i>
+                </li>
+                <li><i class="fa fa-fw fa-user"></i><strong> Pierre Pellerin</strong></li>
+                <li><i class="fa fa-fw fa-calendar"></i><span> 01 nov. 2014</span></li>
+                <li><i class="fa fa-fw fa-clock-o"></i><span> 16:52</span></li>
+            </ul>
+            <ul class="actions">
+                <li><a href="#"><i class="fa fa-fw fa-external-link"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-comments"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-magnet"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!---->
+<!---->
+<!---->
+<div class="panel panel-default feed-entry">
+    <div class="panel-body">
+        <div class="col-lg-6 description">
+            <h4>
+                <a href="#">[#4332] - Création, mise à jour, liste et suppression des util…</a>
+            </h4>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo…
+            </p>
+        </div>
+        <div class="col-lg-2 time">
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="fa fa-fw fa-clock-o"></i>
+                </div>
+                <div class="col-lg-8">
+                    <strong class="estimate">-3hrs <span>reste 2hrs</span></strong>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 person">
+            <img src="../public/assets/02.jpg"
+                 class="img-rounded"
+                 width="64"
+                 alt="Jean-Michel Apeuprès">
+            <ul class="informations">
+                <li><span class="label label-info">Déclaration de temps</span> <i class="fa fa-fw fa-info-circle"></i>
+                </li>
+                <li><i class="fa fa-fw fa-user"></i><strong> Jean-Michel Apeuprès</strong></li>
+                <li><i class="fa fa-fw fa-calendar"></i><span> 01 juin 2014</span></li>
+                <li><i class="fa fa-fw fa-clock-o"></i><span> 16:52</span></li>
+            </ul>
+            <ul class="actions">
+                <li><a href="#"><i class="fa fa-fw fa-external-link"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-comments"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-magnet"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!---->
+<!---->
+<!---->
+<div class="panel panel-danger feed-entry">
+    <div class="panel-body">
+        <div class="col-lg-6 description">
+            <h4>
+                <a href="#">[#4332] - Création, mise à jour, liste et suppression des util…</a>
+            </h4>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo…
+            </p>
+        </div>
+        <div class="col-lg-2 time">
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="fa fa-fw fa-clock-o"></i>
+                </div>
+                <div class="col-lg-8">
+                    <strong class="estimate">-3hrs <span>reste 2hrs</span></strong>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 person">
+            <img src="../public/assets/me.jpeg"
+                 class="img-rounded"
+                 width="64"
+                 alt="Alicia Penn (Vous)">
+            <ul class="informations">
+                <li><span class="label label-info">Déclaration de temps</span> <i class="fa fa-fw fa-info-circle"></i>
+                </li>
+                <li><i class="fa fa-fw fa-user"></i><strong> Alicia Penn</strong></li>
+                <li><i class="fa fa-fw fa-calendar"></i><span> 01 nov. 2014</span></li>
+                <li><i class="fa fa-fw fa-clock-o"></i><span> 16:52</span></li>
+            </ul>
+            <ul class="actions">
+                <li><a href="#"><i class="fa fa-fw fa-external-link"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-comments"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-magnet"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!---->
+<!---->
+<!---->
+<div class="panel panel-default feed-entry">
+    <div class="panel-body">
+        <div class="col-lg-6 description">
+            <h4>
+                <a href="#">[#4332] - Création, mise à jour, liste et suppression des util…</a>
+            </h4>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo…
+            </p>
+        </div>
+        <div class="col-lg-2 time">
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="fa fa-fw fa-clock-o"></i>
+                </div>
+                <div class="col-lg-8">
+                    <strong class="estimate">-3hrs <span>reste 2hrs</span></strong>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 person">
+            <img src="../public/assets/me.jpeg"
+                 class="img-rounded"
+                 width="64"
+                 alt="Alicia Penn (Vous)">
+            <ul class="informations">
+                <li><span class="label label-info">Déclaration de temps</span> <i class="fa fa-fw fa-info-circle"></i>
+                </li>
+                <li><i class="fa fa-fw fa-user"></i><strong> Alicia Penn</strong></li>
+                <li><i class="fa fa-fw fa-calendar"></i><span> 01 nov. 2014</span></li>
+                <li><i class="fa fa-fw fa-clock-o"></i><span> 16:52</span></li>
+            </ul>
+            <ul class="actions">
+                <li><a href="#"><i class="fa fa-fw fa-external-link"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-comments"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-magnet"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</main>
 </div>
 </body>
 </html>

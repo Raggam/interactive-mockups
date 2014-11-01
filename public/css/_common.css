@@ -11,6 +11,11 @@ a:hover {
     text-decoration: none;
 }
 
+.panel {
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
 /**********************************************************************************************************************/
 /**
 * NAVBAR
@@ -18,6 +23,7 @@ a:hover {
 nav.navbar {
     background-color: #a2c4c9;
     line-height: 40px;
+    border-radius: 0;
 }
 
 .navbar-nav > li > a {
@@ -105,6 +111,76 @@ aside h5.page-header {
 
 #quick-add ul li.current a {
     color: #555;
+}
+
+/**********************************************************************************************************************/
+h3.date {
+    color: #ddd;
+    font-size: 1em;
+}
+
+/**********************************************************************************************************************/
+.feed-entry {
+    font-size: .8em;
+}
+
+.feed-entry.panel-danger .panel-body {
+    background-color: #F2DEDE;
+}
+
+.feed-entry h4 {
+    font-size: 1.2em;
+}
+
+.feed-entry .description p {
+    text-align: justify;
+}
+
+.feed-entry .time {
+    vertical-align: middle;
+    position: relative;
+    color: #bbb;
+    font-size: 1em;
+    text-align: center;
+}
+
+.feed-entry .time i.fa {
+    color: #eee;
+    font-size: 3em;
+}
+
+.feed-entry .time strong {
+    font-size: 2em;
+}
+
+.feed-entry .time span {
+    display: block;
+    font-size: .5em;
+}
+
+.feed-entry .person {
+    border-left: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.feed-entry .person img {
+    float: left;
+}
+
+.feed-entry .person ul {
+    list-style-type: none;
+    margin: 0 0 0 5px;
+    padding: 0;
+    float: left;
+}
+
+.feed-entry .person ul.actions li a {
+    color: #ccc;
+}
+
+.feed-entry .person ul.actions {
+    font-size: 1.5em;
+    float: right;
 }
 
 /**********************************************************************************************************************/
