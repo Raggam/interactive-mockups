@@ -12,8 +12,12 @@ a:hover {
 }
 
 .panel {
-    border-radius: 0;
     margin-bottom: 10px;
+    background-color: #fefefe;
+}
+
+.more-info {
+    color: #597eaa;
 }
 
 /**********************************************************************************************************************/
@@ -24,6 +28,7 @@ nav.navbar {
     background-color: #a2c4c9;
     line-height: 40px;
     border-radius: 0;
+    border-bottom: 1px solid #76a5af;
 }
 
 .navbar-nav > li > a {
@@ -71,9 +76,73 @@ nav.navbar .input-group-addon {
 }
 
 /**********************************************************************************************************************/
+aside {
+    color: #999;
+
+}
+
 aside h5.page-header {
-    color: #ddd;
+    color: #555;
     margin-top: 0;
+}
+
+aside h6 {
+    text-align: right;
+    font-size: .8em;
+    color: #ccc;
+}
+
+aside ul {
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    list-style-type: none;
+    font-size: .9em;
+}
+
+aside ul li {
+    margin-bottom: 1px;
+}
+
+aside ul li a {
+    display: inline-block;
+    width: 100%;
+    color: #555;
+}
+
+aside ul.collabs li a:hover {
+    background-color: #eee;
+}
+
+aside ul li strong {
+    font-weight: normal;
+}
+
+aside ul.collabs li span.status {
+    margin-top: 7px;
+}
+
+aside ul li span.status {
+    float: right;
+}
+
+aside ul li .status-1 {
+    color: #6aa84f;
+}
+
+aside ul li .status-2 {
+    color: #f6b26b;
+}
+
+aside ul li .status-3 {
+    color: #cf2a27;
+}
+
+aside ul li .status-4 {
+    color: #597eaa;
+}
+
+aside h5 .more-info {
+    float: right;
 }
 
 /**********************************************************************************************************************/
@@ -159,7 +228,6 @@ h3.date {
 }
 
 .feed-entry .person {
-    border-left: 1px solid #ccc;
     overflow: hidden;
 }
 
